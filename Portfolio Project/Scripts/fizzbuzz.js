@@ -22,7 +22,7 @@
         }
         //Display The Output to the User
         output = output.substr(0, output.length - 2);
-        $("#factOut").text(output);
+        $("#fizzOut").text(output);
 
     });
 
@@ -31,6 +31,6 @@
     $("#btnClear").click(function () {
         $("#fbn1").val("");
         $("#fbn2").val("");
-        $("#factOut").text("");
+        $("#fizzOut").text("");
     });
 });

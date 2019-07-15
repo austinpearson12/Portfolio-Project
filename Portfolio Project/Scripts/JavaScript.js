@@ -2,7 +2,7 @@
 
 
     //step 1: Get the data
-    $("#btnFact").click(function () {
+    $("#btnPal").click(function () {
         var word = $("#palIn").val();
 
 
@@ -19,6 +19,11 @@
         else {
             $("#palOut").text(revword + "is not a Palindrome.");
         }
+    });
+
+    $("#btnClear2").click(function () {
+        $("#palIn").val("");
+        $("#palOut").text("");
     });
 
 });

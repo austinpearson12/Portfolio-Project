@@ -173,6 +173,7 @@
     <Content Include="Scripts\contact.js" />
     <Content Include="Scripts\contactform.js" />
     <Content Include="Scripts\easing.js" />
+    <Content Include="Scripts\fact.js" />
     <Content Include="Scripts\gridscroll.js" />
     <Content Include="Scripts\imgloaded.js" />
     <Content Include="Scripts\JavaScript.js" />
