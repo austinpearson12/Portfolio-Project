@@ -176,6 +176,7 @@
     <Content Include="Scripts\fact.js" />
     <Content Include="Scripts\gridscroll.js" />
     <Content Include="Scripts\imgloaded.js" />
+    <Content Include="Scripts\JavaMath.js" />
     <Content Include="Scripts\JavaScript.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -194,6 +195,7 @@
     <Content Include="Scripts\parallax.js" />
     <Content Include="Scripts\smoothscroll.js" />
     <Content Include="Scripts\fizzbuzz.js" />
+    <Content Include="Scripts\sum.js" />
     <Content Include="Scripts\SyntaxHighlighter\scripts\shAutoloader.js" />
     <Content Include="Scripts\SyntaxHighlighter\scripts\shBrushAppleScript.js" />
     <Content Include="Scripts\SyntaxHighlighter\scripts\shBrushAS3.js" />

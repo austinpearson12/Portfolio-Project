@@ -212,19 +212,19 @@
                             </li>
                             <li>
                                 <figure>
-                                    <img src="~/img/work/4.jpg" alt="" />
+                                    <img src="~/img/work/4.jpg" class="img-responsive picH" data-toggle="modal" data-target="#myModal4" />
                                     <figcaption>
-                                        <h3>Vitae fringilla elit</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                        <h3>Sum of All Fears Exercise</h3>
+                                        <p></p>
                                     </figcaption>
                                 </figure>
                             </li>
                             <li>
                                 <figure>
-                                    <img src="~/img/work/5.jpg" alt="" />
+                                    <img src="~/img/work/5.jpg" class="img-responsive picH" data-toggle="modal" data-target="#myModal5" />
                                     <figcaption>
-                                        <h3>Vitae fringilla elit</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                        <h3>Java Script Math Coding Exercise</h3>
+                                        <p></p>
                                     </figcaption>
                                 </figure>
                             </li>
@@ -441,6 +441,8 @@
     <script src="~/Scripts/fizzbuzz.js"></script>
     <script src="~/Scripts/JavaScript.js"></script>
     <script src="~/Scripts/fact.js"></script>
+    <script src="~/Scripts/sum.js"></script>
+    <script src="~/Scripts/JavaMath.js"></script>
     <script>
         wow = new WOW({}).init();
     </script>
@@ -464,11 +466,12 @@
             });
         });
     </script>
- 
+
 
 
 
     <!--Modal Section For Grid Gallery-->
+    <!--FizzBuzz Exercise Modal-->
     <div id="myModal1" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg">
 
@@ -568,8 +571,6 @@
             </div>
         </div>
     </div>
-
-
     <!-- Factorial Modal -->
     <div id="myModal3" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg">
@@ -605,11 +606,134 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
     </div>
+    <!--Sum Of All Fears Modal-->
+    <div id="myModal4" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Coding Exercises</h4>
+                </div>
+                <div class="modal-body">
+
+                    <h2>Sum of All Fears</h2>
+                    <div class="row">
+                        <div class="col-md-11">
+                            <p>
+                                The Sum of All Fears icoding cahllenge involves an array of integers and some number called 'K'.
+                                If 'K' can be derived from adding any two numbers from the array tehn it is said to contain that 'K' calue.
+                                If given an array =[10,4,6,7] and a 'K' value of 17, the array contains the'K' value because 10 + 7 ='K'
+                            </p>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-md-6" h3>
+                            Create a searchable array by entering 6 numbers into the boxes below
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <input class="form-inline" type="number" id="sumNum12" placeholder="Enter a number" />
+                        </div>
+                        <div class="col-md-2">
+                            <input class="form-inline" type="number" id="sumNum21" placeholder="Enter a number" />
+                        </div>
+                        <div class="col-md-2">
+                            <input class="form-inline" type="number" id="sumNum31" placeholder="Enter a number" />
+                        </div>
+                        <div class="col-md-2">
+                            <input class="form-inline" type="number" id="sumNum41" placeholder="Enter a number" />
+                        </div>
+                        <div class="col-md-2">
+                            <input class="form-inline" type="number" id="sumNum51" placeholder="Enter a number" />
+                        </div>
+                        <div class="col-md-2">
+                            <input class="form-inline" type="number" id="sumNum61" placeholder="Enter a number" />
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-md-6" h3>
+                            Establish a 'K' value by entering a number in the box below
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <input class="form-inline" type="number" id="Kvalue" placeholder="Enter a number" />
+                        </div>
+                        <div class="col-md-6">
+                            <p id="factOut4" class="text-center"></p>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="btn-group btn-group-lg btn-group-justified">
+
+                        <a class="btn btn-success" id="btnSum4">Calculate</a>
+                        <a class="btn btn-info" id="codeBtn3">Code</a>
+                        <a class="btn btn-danger" id="btnClear4">Clear</a>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="code">
+                                <pre class="brush:js">
+       
+                $("btnSum").click(function () {
+                var num1 = Number($("#sumNum1").val());
+                var num2 = Number($("#sumNum2").val());
+                var num3 = Number($("#sumNum3").val());
+                var num4 = Number($("#sumNum4").val());
+                var num5 = Number($("#sumNum5").val());
+                var num6 = Number($("#sumNum6").val());
+
+
+
+
+                });
+            
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--Java Math Modal-->
+    <div id="myModal5" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the modal.</p>
+                </div>
+                <div class="modal-footer">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
 
 
 
