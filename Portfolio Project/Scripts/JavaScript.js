@@ -25,6 +25,15 @@
         $("#palIn").val("");
         $("#palOut").text("");
     });
+    $("#code").hide();
+    $("#codeBtn2").click(function () {
+        $("#code").toggle();
+        if ($(this).text == "Show Code") {
+            $(this).text("Hide Code");
+        } else {
+            $(this).text("Show Code");
+        }
+    });
 
 });
     //Step 3: Infrom The User

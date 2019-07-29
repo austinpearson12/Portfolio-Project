@@ -5,7 +5,7 @@
         var num1 = +($("#fbn1").val());
         var num2 = +($("#fbn2").val());
         var output = "";
-        // Use a loop using Java
+        // Use a for loop
         for (var counter = 1; counter <= 100; counter++) {
             if ((counter % num1 == 0) && (counter % num2 == 0)) {
                 output += "FizzBuzz, ";
@@ -32,5 +32,14 @@
         $("#fbn1").val("");
         $("#fbn2").val("");
         $("#fizzOut").text("");
+    });
+    $("#code").hide();
+    $("#codeBtn").click(function () {
+        $("#code").toggle();
+        if ($(this).text == "Show Code") {
+            $(this).text("Hide Code");
+        } else {
+            $(this).text("Show Code");
+        }
     });
 });

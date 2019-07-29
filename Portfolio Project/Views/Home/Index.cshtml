@@ -32,6 +32,10 @@
         .picH {
             height: 255px;
         }
+        .personalH {
+            height:404px;
+            width:404px;
+        }
     </style>
     <!-- =======================================================
       Theme Name: MyResume
@@ -90,20 +94,21 @@
                 <div class="row">
                     <div class="col-md-6 standardH">
                         <div class="text-center">
-                            <img src="~/img/team/1.jpg" alt=""><br />
-                            <a href="#"><b>Download my resume</b></a>                            
-
+                            <img src="~/img/team/1.jpg" class="" alt=""><br />
+                            <a href="#"><b>Download my resume</b></a>
                         </div>
                     </div>
                     <div class="col-md-6 standardH">
                         <p class="verticle-middle">
-                            My passion for technology started with my first computer, the second I got it I took it apart to see how exactly it works. In high school I took a web development class learning Html and CSS, I instantly developed a love for programming. Off and on for the next for years, I learned little by little. Up until I got accepted into coder foundry where now I am studying and learning code making my dream of working in technology come true.
+                            My passion for technology started with my first computer, the second I got it I took it apart to see how exactly it works. In high school I took a web development class learning Html and CSS, I instantly developed a love for programming. Off and on for the next few years, I learned little by little. Up until I got accepted into Coder Foundry where now I am studying and learning code making my dream of working in technology come true.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
-
+        @*
+        ༼ つ ◕_◕ ༽つ
+        *@
 
         <!--skills-->
         <section class="specialties" id="specialties">
@@ -188,10 +193,10 @@
                             </li>
                             <li>
                                 <figure>
-                                    <img src="~/img/work/6.jpg" alt="" />
+                                    <a href="https://austinsblog.azurewebsites.net/"><img src="~/img/work/6.jpg" /></a>
                                     <figcaption>
-                                        <h3>Vitae fringilla elit</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                        <h3>Personal Blog <br />Project </h3>
+                                        <p></p>
                                     </figcaption>
                                 </figure>
                             </li>
@@ -200,8 +205,8 @@
                                 <figure>
                                     <img src="~/img/work/7.jpg" alt="" />
                                     <figcaption>
-                                        <h3>Vitae fringilla elit</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                        <h3>Bug Tracker <br /> Project</h3>
+                                        <p></p>
                                     </figcaption>
                                 </figure>
                             </li>
@@ -211,7 +216,7 @@
                                     <img src="~/img/work/8.jpg" alt="" />
                                     <figcaption>
                                         <h3>Vitae fringilla elit</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                        <p></p>
                                     </figcaption>
                                 </figure>
                             </li>
@@ -313,7 +318,6 @@
                                 <li><i class="fa fa-home fa-2x"></i> Home # 38, Suite 54 Elizebth Street</li>
                                 <li><i class="fa fa-phone fa-2x"></i> (336)-307-8393</li>
                                 <li><i class="fa fa-envelope fa-2x"></i> austinpearson52@yahoo.com</li>
-                                <li><i class="fa fa-download fa-2x"></i> Download My Resume</li>
                             </ul>
                         </div>
                     </div>
@@ -357,20 +361,19 @@
             </p>
             <div class="container">
                 <ul>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                    <li><a href="#"><i class="fa fa-flickr"></i></a></li>
+                    <li><a href="https://twitter.com/AustinCPearson1"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://github.com/austinpearson12"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/austin-pearson-90068818a/"><i class="fa fa-linkedin"></i></a></li>
+
                 </ul>
                 <p>&copy; MyResume Theme. All Rights Reserved.</p>
                 <div class="credits">
                     <!--
-                      All the links in the footer should remain intact.
-                      You can delete the links only if you purchased the pro version.
-                      Licensing information: https://bootstrapmade.com/license/
-                      Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyResume
-                    -->
+                  All the links in the footer should remain intact.
+                  You can delete the links only if you purchased the pro version.
+                  Licensing information: https://bootstrapmade.com/license/
+                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyResume
+                -->
                     Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
                 </div>
             </div>
@@ -399,6 +402,7 @@
     <script src="~/Scripts/fact.js"></script>
     <script src="~/Scripts/sum.js"></script>
     <script src="~/Scripts/JavaMath.js"></script>
+    <script src="~/Scripts/SyntaxHighlighter/scripts/shCore.js"></script>
     <script>
         wow = new WOW({}).init();
     </script>
@@ -474,6 +478,59 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="code">
+                                <pre class="brush:js">
+                                    $(function () {
+
+                                        $("#btnFizz").click(function () {
+                                            // Get value from input id's
+                                            var num1 = +($("#fbn1").val());
+                                            var num2 = +($("#fbn2").val());
+                                            var output = "";
+                                            // Use a loop using Java
+                                            for (var counter = 1; counter <= 100; counter++) {
+                                                if ((counter % num1 == 0) && (counter % num2 == 0)) {
+                                                    output += "FizzBuzz, ";
+                                                }
+                                                else if (counter % num1 == 0) {
+                                                    output += "Fizz, ";
+                                                }
+                                                else if (counter % num2 == 0) {
+                                                    output += "Buzz, ";
+                                                }
+                                                else {
+                                                    output += counter + ", ";
+                                                }
+                                            }
+                                            //Display The Output to the User
+                                            output = output.substr(0, output.length - 2);
+                                            $("#fizzOut").text(output);
+
+                                        });
+
+
+
+                                        $("#btnClear").click(function () {
+                                            $("#fbn1").val("");
+                                            $("#fbn2").val("");
+                                            $("#fizzOut").text("");
+                                        });
+                                        $("#code").hide();
+                                        $("#codeBtn").click(function () {
+                                            $("#code").toggle();
+                                            if ($(this).text == "Show Code") {
+                                                $(this).text("Hide Code");
+                                            } else {
+                                                $(this).text("Show Code");
+                                            }
+                                        });
+                                    });
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -517,7 +574,43 @@
                         <a class="btn btn-info" id="codeBtn2">Code</a>
                         <a class="btn btn-danger" id="btnClear2">Clear</a>
                     </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="code">
+                                <pre class="brush:js">
+                                    $(function () {
 
+
+                                        //step 1: Get the data
+                                        $("#btnPal").click(function () {
+                                            var word = $("#palIn").val();
+
+
+
+                                            //Step 2:Reverse the word
+                                            //Use a decrementing for loop in conjunction with the substr command and the += operator to produce the reverse word.
+                                            for (var index = word.length - 1, revword = ""; index >= 0; index--) {
+                                                revword += word.substr(index, 1);
+                                            }
+
+                                            if (word === revword) {
+                                                $("#palOut").text(revword + "is a Palindrome!");
+                                            }
+                                            else {
+                                                $("#palOut").text(revword + "is not a Palindrome.");
+                                            }
+                                        });
+
+                                        $("#btnClear2").click(function () {
+                                            $("#palIn").val("");
+                                            $("#palOut").text("");
+                                        });
+
+                                    });
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
 
 
                 </div>
@@ -560,7 +653,43 @@
                         <a class="btn btn-info" id="codeBtn3">Code</a>
                         <a class="btn btn-danger" id="btnClear3">Clear</a>
                     </div>
-                </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="code">
+                                <pre class="brush:js">
+                                $(function () {
+
+                                //I need a click event handler for the button
+                                        $("#btnFact3").click(function () {
+                                            //Step:1 Get the User Data
+                                            var number = +$("#factIn").val();
+
+                                            if (number > 170) {
+                                                alert("I told you...");
+                                                $("#factIn").val("");
+
+                                            }
+
+                                            //Step2: Calculate the Factorial
+                                            for (var loop = number - 1; loop > 1; loop--) {
+                                                //How do we claculate the factorial
+                                                //numer=number*loop
+                                                number *= loop;
+                                            }
+
+                                            //Step 3: Show the results
+                                            $("#factOut").text(number);
+                                        });
+                                        $("#btnClear3").click(function () {
+                                            $("#factIn").val("");
+                                            $("#factOut").text("");
+                                        });
+                                });
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>               
                 <div class="modal-footer">
                 </div>
             </div>
@@ -597,22 +726,22 @@
                     </div>
                     <div class="row">
                         <div class="col-md-2">
-                            <input class="form-control" type="number" id="sumNum12" placeholder="Enter a number" />
+                            <input class="form-control" type="number" id="val1" placeholder="Enter a number" />
                         </div>
                         <div class="col-md-2">
-                            <input class="form-control" type="number" id="sumNum21" placeholder="Enter a number" />
+                            <input class="form-control" type="number" id="val2" placeholder="Enter a number" />
                         </div>
                         <div class="col-md-2">
-                            <input class="form-control" type="number" id="sumNum31" placeholder="Enter a number" />
+                            <input class="form-control" type="number" id="val3" placeholder="Enter a number" />
                         </div>
                         <div class="col-md-2">
-                            <input class="form-control" type="number" id="sumNum41" placeholder="Enter a number" />
+                            <input class="form-control" type="number" id="val4" placeholder="Enter a number" />
                         </div>
                         <div class="col-md-2">
-                            <input class="form-control" type="number" id="sumNum51" placeholder="Enter a number" />
+                            <input class="form-control" type="number" id="val5" placeholder="Enter a number" />
                         </div>
                         <div class="col-md-2">
-                            <input class="form-control" type="number" id="sumNum61" placeholder="Enter a number" />
+                            <input class="form-control" type="number" id="val6" placeholder="Enter a number" />
                         </div>
                     </div>
                     <br />
@@ -633,11 +762,58 @@
                     <br />
                     <div class="btn-group btn-group-lg btn-group-justified">
 
-                        <a class="btn btn-success" id="btnSum4">Calculate</a>
+                        <a class="btn btn-success" id="btnFact5">Calculate</a>
                         <a class="btn btn-info" id="codeBtn4">Code</a>
-                        <a class="btn btn-danger" id="btnClear4">Clear</a>
+                        <a class="btn btn-danger" id="clearBtn4">Clear</a>
                     </div>
                     <hr />
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="code">
+                                <pre class="brush:js">
+                                          $("btnFact5").click(function () {
+                                        //Set an empty Array
+                                        var sumArray = new Array();
+
+                                        //Get the Input Numbers
+                                        sumArray.push(+$("$sumNum1").val());
+                                        sumArray.push(+$("$sumNum21").val());
+                                        sumArray.push(+$("$sumNum31").val());
+                                        sumArray.push(+$("$sumNum41").val());
+                                        sumArray.push(+$("$sumNum51").val());
+                                        sumArray.push(+$("$sumNum61").val());
+
+                                        var kValue = +$("#kValue").val();
+
+                                        for (index = 0, found = false; index < sumArray.length - 1; index++) {
+                                            var position = sumArray.indexOf(kValue1 - sumArray[index], index + 1);
+                                            if (position > 0) {
+                                                found = true;
+                                                $("#factOut4").text("Congrats! K has been found!");
+                                                $("#mathEquation").text(index + "+" + sumArray + "=" + kValue);
+                                                break;
+                                            }
+                                        }
+                                        if (found) {
+                                            $("#factOut4").text("K is not in this Array.");
+                                        }
+                                        $("#clearBtn5").click(function () {
+                                            $("#factOut4").text("");
+                                            $("#sumNum12").text("");
+                                            $("#sumNum21").text("");
+                                            $("#sumNum31").text("");
+                                            $("#sumNum41").text("");
+                                            $("#sumNum51").text("");
+                                            $("#sumNum61").text("");
+                                            $("#kValue").text("");
+                                        });
+
+                                    });
+            
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -652,83 +828,122 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">JavaScript Exercises</h4>
                 </div>
-                <div class="modal-body">                   
-                        <h2>Javascript Math</h2>
+                <div class="modal-body">
+                    <h2>Javascript Math</h2>
 
-                        <hr />
-                        <div class="row">
-                            <div class="col-md-12 text-center h3">
-                                <h4> Enter any 5 numbers to run the math</h4>
-                                <br />
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-12 text-center h3">
+                            <h4> Enter any 5 numbers to run the math</h4>
+                            <br />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input class="form-control" type="number" id="mathnum1" placeholder=" Enter a number" />
+                        </div>
+                        <div class=" col-mod-6">
+                            <p id="min" class="text-center"></p>
+                        </div>
+
+
+
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input class="form-control" type="number" id="mathnum2" placeholder=" Enter a number" />
+                        </div>
+                        <div class="col-mod-6">
+                            <p id="max" class="text-center"></p>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input class="form-control" type="number" id="mathnum3" placeholder=" Enter a number" />
+                        </div>
+                        <div class="col-mod-6">
+                            <p id="mean" class="text-center"></p>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input class="form-control" type="number" id="mathnum4" placeholder=" Enter a number" />
+                        </div>
+                        <div class="col-md-6">
+                            <p id="sum" class="text-center"></p>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input class="form-control" type="number" id="mathnum5" placeholder=" Enter a number" />
+                        </div>
+                        <div class="col-md-6">
+                            <p id="product" class="text-center"></p>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-md-12">
+
+
+                            <button class="btn btn-success" id="mathBtn">Calculate</button>
+                            <button class="btn btn-info" id="codeBtn5">Show Code</button>
+                            <button class="btn btn-danger" id="clearBtn5">Clear</button>
+
+                        </div>
+                    </div>
+
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="code">
+                                <pre class="brush:js">
+                                 $("#mathBtn").click(function () {
+                                    //Step 1: Grab the value inside input id
+                                    var number1 = Number($("#mathnum1").val());
+                                    var number2 = Number($("#mathnum2").val());
+                                    var number3 = Number($("#mathnum3").val());
+                                    var number4 = Number($("#mathnum4").val());
+                                    var number5 = Number($("#mathnum5").val());
+
+                                    //Step 2: Do something with it (javascript)
+                                    var min = Math.min(number1, number2, number3, number4, number5);
+                                    var max = Math.max(number1, number2, number3, number4, number5);
+                                    var sum = number1 + number2 + number3 + number4 + number5;
+                                    var mean = sum / 5;
+                                    var product = number1 * number2 * number3 * number4 * number5;
+
+                                    //Step 3: Output the results to the screen (jquery)
+                                    $("#min").text("Your smallest number is " + min + ".");
+                                    $("#max").text("Your largest number is " + max + ".");
+                                    $("#mean").text("The average of the five is " + mean + ".");
+                                    $("#sum").text("The sum of the five is " + sum + ".");
+                                    $("#product").text("And the product of everything is " + product + ".");
+                                });
+
+                                $("#clearBtn").click(function () {
+                                    $("#sum").text("");
+                                    $("#product").text("");
+                                    $("#mean").text("");
+                                    $("#min").text("");
+                                    $("#max").text("");
+                                    $("#mathnum1, #mathnum2, #mathnum3, #mathnum4, #mathnum5").val("");
+                                });
+                                </pre>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <input class="form-control" type="number" id="mathnum1" placeholder=" Enter a number" />
-                            </div>
-                            <div class=" col-mod-6">
-                                <p id="min" class="text-center"></p>
-                            </div>
-                    
-                
-                                                           
-            </div>
-            <br />
-            <div class="row">
-                <div class="col-md-6">
-                    <input class="form-control" type="number" id="mathnum2" placeholder=" Enter a number" />
+                    </div>
                 </div>
-                <div class="col-mod-6">
-                    <p id="max" class="text-center"></p>
-                </div>
-            </div>
-            <br />
-            <div class="row">
-                <div class="col-md-6">
-                    <input class="form-control" type="number" id="mathnum3" placeholder=" Enter a number" />
-                </div>
-                <div class="col-mod-6">
-                    <p id="mean" class="text-center"></p>
-                </div>
-            </div>
-            <br />
-            <div class="row">
-                <div class="col-md-6">
-                    <input class="form-control" type="number" id="mathnum4" placeholder=" Enter a number" />
-                </div>
-                <div class="col-md-6">
-                    <p id="sum" class="text-center"></p>
-                </div>
-            </div>
-            <br />
-            <div class="row">
-                <div class="col-md-6">
-                    <input class="form-control" type="number" id="mathnum5" placeholder=" Enter a number" />
-                </div>
-                <div class="col-md-6">
-                    <p id="product" class="text-center"></p>
-                </div>
-            </div>
-            <br />
-            <div class="row">
-                <div class="col-md-12">
-
-
-                    <button class="btn btn-success" id="mathBtn">Calculate</button>
-                    <button class="btn btn-info" id="codeBtn5">Show Code</button>
-                    <button class="btn btn-danger" id="clearBtn5">Clear</button>
+                <div class="modal-footer">
 
                 </div>
             </div>
-
-            <hr />
-        </div>
-        <div class="modal-footer">
-
         </div>
     </div>
-            </div>
-        </div>
 
 
 
