@@ -11,8 +11,8 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Austin Pearson Portfolio</title>
 
-    <!-- Bootstrap -->
-
+    <!-- Bootstrap -->   
+    
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
     <link href="~/Content/font-awesome.css" rel="stylesheet" />
     <link href="~/Content/animate.css" rel="stylesheet" />
@@ -20,6 +20,8 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+    <link href="~/Scripts/SyntaxHighlighter/styles/shCore.css" rel="stylesheet" />
+    <link href="~/Scripts/SyntaxHighlighter/styles/shThemeMidnight.css" rel="stylesheet" />
     <style>
         .verticle-middle {
             vertical-align: middle;
@@ -32,9 +34,10 @@
         .picH {
             height: 255px;
         }
+
         .personalH {
-            height:404px;
-            width:404px;
+            height: 404px;
+            width: 404px;
         }
     </style>
     <!-- =======================================================
@@ -137,8 +140,8 @@
         <section class="gallery" id="gallery">
             <div class="container">
                 <div class="heading text-center">
-                    <h2>Portfolio</h2>
-                    <h3>My portfolio consists of various exercises and projects from my time learning code at Coder Foundry.</h3>
+                    <h2>Coding Exercises</h2>
+                    <h3>Here are afew coding exercises using javascript and jquery.</h3>
                 </div>
 
                 <div id="grid-gallery" class="grid-gallery">
@@ -191,9 +194,30 @@
                                     </figcaption>
                                 </figure>
                             </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!--education-->
+
+        <section class="gallery" id="gallery">
+            <div class="container">
+                <div class="heading text-center">
+                    <h2>Portfolio</h2>
+                    <h3>Here are afew of my projects</h3>
+                </div>
+                <div id="grid-gallery" class="grid-gallery">
+                    <section class="grid-wrap">
+                        <ul class="grid">
+                            <li class="grid-sizer"></li>
                             <li>
                                 <figure>
-                                    <a href="https://austinsblog.azurewebsites.net/"><img src="~/img/work/6.jpg" /></a>
+                                    <a href="https://austinsblog.azurewebsites.net/" target="_blank"><img src="~/img/work/6.jpg" /></a>
                                     <figcaption>
                                         <h3>Personal Blog <br />Project </h3>
                                         <p></p>
@@ -220,75 +244,12 @@
                                     </figcaption>
                                 </figure>
                             </li>
-
                         </ul>
+
                     </section>
                 </div>
             </div>
         </section>
-
-
-
-
-        <!--education-->
-        <section class="feedback" id="feedback">
-            <div class="container">
-                <div class="heading">
-                    <h2>Education</h2>
-                    <h3>
-                        Phasellus non dolor nibh. Nullam elementum tellus pretium feugiat.<br>
-                        Cras dictum tellus dui, vitae sollicitudin ipsum tincidunt in. Sed tincidunt tristique enim sed sollcitudin.
-                    </h3>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="col-md-4 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.3s">
-                    <div class="text-center">
-                        <div class="hi-icon-wrap hi-icon-effect">
-                            <h4>MASTER OF COMPUTER SCIENCE</h4>
-                            <h5>FEB 2012 - DEC 2014</h5>
-                            <i class="fa fa-laptop"></i>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.6s">
-                    <div class="text-center">
-                        <div class="hi-icon-wrap hi-icon-effect">
-                            <h4>MASTER OF COMPUTER SCIENCE</h4>
-                            <h5>FEB 2012 - DEC 2014</h5>
-                            <i class="fa fa-book"></i>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.9s">
-                    <div class="text-center">
-                        <div class="hi-icon-wrap hi-icon-effect">
-                            <h4>MASTER OF COMPUTER SCIENCE</h4>
-                            <h5>FEB 2012 - DEC 2014</h5>
-                            <i class="fa fa-gear"></i>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="row">
-                    <blockquote>
-                        "Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program." <cite>Rajanand<br /><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></cite>
-                    </blockquote>
-                    <blockquote>
-                        "Always code as if the guy who ends up maintaning your code will be a violent psychopath who knows where you live." <cite>Rick Osborne<br /><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></cite>
-                    </blockquote>
-                </div>
-            </div>
-        </section>
-
         <!--education-->
         <section class="contact" id="contact">
             <div class="container">
@@ -298,29 +259,6 @@
                         Have more questions or conerns about my Portfolio?<br>
                         Shoot me an email or give me a call.
                     </h3>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7">
-                        <div class="map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-
-                    <div class="contact-info">
-                        <div class="col-md-5">
-                            <h4>My Contact Info</h4>
-                            <h5>Nullam elementum tellus pretium feugiat</h5>
-                            <p>Fusce fermen tum neque a rutrum varius odio pede ullamcorp-er tellus ut dignissim nisi risus non tortor</p>
-                            <ul>
-                                <li><i class="fa fa-home fa-2x"></i> Home # 38, Suite 54 Elizebth Street</li>
-                                <li><i class="fa fa-phone fa-2x"></i> (336)-307-8393</li>
-                                <li><i class="fa fa-envelope fa-2x"></i> austinpearson52@yahoo.com</li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
 
@@ -361,127 +299,67 @@
             </p>
             <div class="container">
                 <ul>
-                    <li><a href="https://twitter.com/AustinCPearson1"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://github.com/austinpearson12"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/austin-pearson-90068818a/"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://twitter.com/AustinCPearson1" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://github.com/austinpearson12" target="_blank"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/austin-pearson-90068818a/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
 
                 </ul>
-                <p>&copy; MyResume Theme. All Rights Reserved.</p>
-                <div class="credits">
-                    <!--
-                  All the links in the footer should remain intact.
-                  You can delete the links only if you purchased the pro version.
-                  Licensing information: https://bootstrapmade.com/license/
-                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyResume
-                -->
-                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-                </div>
             </div>
         </section>
 
-    </div>
 
-    <script src="~/Scripts/jquery.js"></script>
-    <script src="~/Scripts/modernizr.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="~/Scripts/bootstrap.min.js"></script>
-    <script src="~/Scripts/menustick.js"></script>
-    <script src="~/Scripts/parallax.js"></script>
-    <script src="~/Scripts/easing.js"></script>
-    <script src="~/Scripts/wow.js"></script>
-    <script src="~/Scripts/smoothscroll.js"></script>
-    <script src="~/Scripts/masonry.js"></script>
-    <script src="~/Scripts/imgloaded.js"></script>
-    <script src="~/Scripts/classie.js"></script>
-    <script src="~/Scripts/colorfinder.js"></script>
-    <script src="~/Scripts/gridscroll.js"></script>
-    <script src="~/Scripts/contact.js"></script>
-    <script src="~/Scripts/common.js"></script>
-    <script src="~/Scripts/fizzbuzz.js"></script>
-    <script src="~/Scripts/JavaScript.js"></script>
-    <script src="~/Scripts/fact.js"></script>
-    <script src="~/Scripts/sum.js"></script>
-    <script src="~/Scripts/JavaMath.js"></script>
-    <script src="~/Scripts/SyntaxHighlighter/scripts/shCore.js"></script>
-    <script>
-        wow = new WOW({}).init();
-    </script>
-    <script type="text/javascript">
-        jQuery(function ($) {
-            $(document).ready(function () {
-                //enabling stickUp on the '.navbar-wrapper' class
-                $('.navbar-wrapper').stickUp({
-                    parts: {
-                        0: 'banner',
-                        1: 'aboutus',
-                        2: 'specialties',
-                        3: 'gallery',
-                        4: 'feedback',
-                        5: 'contact'
-                    },
-                    itemClass: 'menuItem',
-                    itemHover: 'active',
-                    topMargin: 'auto'
-                });
-            });
-        });
-    </script>
+        <!--Modal Section For Grid Gallery-->
+        <!--FizzBuzz Exercise Modal-->
+        <div id="myModal1" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
 
-
-
-
-    <!--Modal Section For Grid Gallery-->
-    <!--FizzBuzz Exercise Modal-->
-    <div id="myModal1" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">JavaScript Exercises</h4>
-                </div>
-                <div class="modal-body">
-
-                    <h2> Fizz Buzz Coding Challenge</h2>
-
-                    <div class="row">
-                        <div class="col-md-12 h3">
-                            Enter two numbers to run code
-                        </div>
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">JavaScript Exercises</h4>
                     </div>
+                    <div class="modal-body">
 
-                    <div class="col-md-6">
+                        <h2> Fizz Buzz Coding Challenge</h2>
+
                         <div class="row">
-                            <input id="fbn1" type="number" placeholder="Enter Number 1" />
-                        </div>
-                        <br />
-                        <div class="row">
-                            <input id="fbn2" type="number" placeholder="Enter Number 2" />
-                        </div>
-                        <br />
-                    </div>
-                    <div class="col-md-6">
-                        <p id="fizzOut" class="text-center"></p>
-
-                    </div>
-                    <br />
-
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="btn-group btn-group-lg btn-group-justified">
-
-                                <a class="btn btn-success" id="btnFizz">Calculate</a>
-                                <a class="btn btn-info" id="codeBtn">Code</a>
-                                <a class="btn btn-danger" id="btnClear">Clear</a>
+                            <div class="col-md-12 h3">
+                                Enter two numbers to run code
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div id="code">
-                                <pre class="brush:js">
+
+                        <div class="col-md-6">
+                            <div class="row">
+                                <input id="fbn1" type="number" placeholder="Enter Number 1" />
+                            </div>
+                            <br />
+                            <div class="row">
+                                <input id="fbn2" type="number" placeholder="Enter Number 2" />
+                            </div>
+                            <br />
+                        </div>
+                        <div class="col-md-6">
+                            <p id="fizzOut" class="text-center"></p>
+
+                        </div>
+                        <br />
+
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="btn-group btn-group-lg btn-group-justified">
+
+                                    <a class="btn btn-success" id="btnFizz">Calculate</a>
+                                    <a class="btn btn-info" id="toggle1">Show Code</a>
+                                    <a class="btn btn-danger" id="btnClear">Clear</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="code1">
+                                    <pre class="brush: js">
                                     $(function () {
 
                                         $("#btnFizz").click(function () {
@@ -528,56 +406,56 @@
                                         });
                                     });
                                 </pre>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--Palindrome Modal-->
-    <div id="myModal2" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg">
+        <!--Palindrome Modal-->
+        <div id="myModal2" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
 
 
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">JavaScript Exercises</h4>
-                </div>
-                <div class="modal-body">
-                    <h2>Palindrome Exercise</h2>
-
-                    <div class="row">
-                        <div class="col-md-12 text-capitalize-center">
-                            <h3> Welcome to the Palindrome Problem!!</h3>
-                        </div>
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">JavaScript Exercises</h4>
                     </div>
-                    <br />
-                    <div class="row">
-                        <div class="col-md-6">
-                            <input id="palIn" type="text" placeholder="Enter your word" />
-                        </div>
-                        <div class="col-md-6">
-                            <p id="palOut"></p>
-                        </div>
-                    </div>
-                    <br />
+                    <div class="modal-body">
+                        <h2>Palindrome Exercise</h2>
 
-                    <div class="btn-group btn-group-lg btn-group-justified">
+                        <div class="row">
+                            <div class="col-md-12 text-capitalize-center">
+                                <h3> Welcome to the Palindrome Problem!!</h3>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input id="palIn" type="text" placeholder="Enter your word" />
+                            </div>
+                            <div class="col-md-6">
+                                <p id="palOut"></p>
+                            </div>
+                        </div>
+                        <br />
 
-                        <a class="btn btn-success" id="btnPal">Calculate</a>
-                        <a class="btn btn-info" id="codeBtn2">Code</a>
-                        <a class="btn btn-danger" id="btnClear2">Clear</a>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div id="code">
-                                <pre class="brush:js">
+                        <div class="btn-group btn-group-lg btn-group-justified">
+
+                            <a class="btn btn-success" id="btnPal">Calculate</a>
+                            <a class="btn btn-info" id="toggle2">Show Code</a>
+                            <a class="btn btn-danger" id="btnClear2">Clear</a>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="code2">
+                                    <pre class="brush: js">
                                     $(function () {
 
 
@@ -608,168 +486,173 @@
 
                                     });
                                 </pre>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Factorial Modal -->
-    <div id="myModal3" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg">
+        <!-- Factorial Modal -->
+        <div id="myModal3" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
 
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Javascript Exercises</h4>
-                </div>
-                <div class="modal-body">
-
-                    <div class="row">
-                        <div class="col-md-12 text-capitalize-center">
-                            <h3> Welcome to the Factorial Problem!!</h3>
-                        </div>
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Javascript Exercises</h4>
                     </div>
-                    <br />
-                    <div class="row">
-                        <div class="col-md-6">
-                            <input id="factIn" type="number" placeholder="Enter a number" />
+                    <div class="modal-body">
+
+                        <div class="row">
+                            <div class="col-md-12 text-capitalize-center">
+                                <h3> Welcome to the Factorial Problem!!</h3>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <p id="factOut"></p>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input id="factIn" type="number" placeholder="Enter a number" />
+                            </div>
+                            <div class="col-md-6">
+                                <p id="factOut"></p>
+                            </div>
                         </div>
-                    </div>
-                    <br />
-                    <div class="btn-group btn-group-lg btn-group-justified">
+                        <br />
+                        <div class="btn-group btn-group-lg btn-group-justified">
 
-                        <a class="btn btn-success" id="btnFact3">Calculate</a>
-                        <a class="btn btn-info" id="codeBtn3">Code</a>
-                        <a class="btn btn-danger" id="btnClear3">Clear</a>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div id="code">
-                                <pre class="brush:js">
-                                $(function () {
+                            <a class="btn btn-success" id="btnFact3">Calculate</a>
+                            <a class="btn btn-info" id="toggle6">Show Code</a>
+                            <a class="btn btn-danger" id="btnClear3">Clear</a>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="code6">
+                                    <pre class="brush: js">
+                                        $(function () {
 
-                                //I need a click event handler for the button
-                                        $("#btnFact3").click(function () {
-                                            //Step:1 Get the User Data
-                                            var number = +$("#factIn").val();
+                                        //I need a click event handler for the button
+                                                $("#btnFact3").click(function () {
+                                                    //Step:1 Get the User Data
+                                                    var number = +$("#factIn").val();
 
-                                            if (number > 170) {
-                                                alert("I told you...");
-                                                $("#factIn").val("");
+                                                    if (number > 170) {
+                                                        alert("I told you...");
+                                                        $("#factIn").val("");
 
-                                            }
+                                                    }
 
-                                            //Step2: Calculate the Factorial
-                                            for (var loop = number - 1; loop > 1; loop--) {
-                                                //How do we claculate the factorial
-                                                //numer=number*loop
-                                                number *= loop;
-                                            }
+                                                    //Step2: Calculate the Factorial
+                                                    for (var loop = number - 1; loop > 1; loop--) {
+                                                        //How do we claculate the factorial
+                                                        //numer=number*loop
+                                                        number *= loop;
+                                                    }
 
-                                            //Step 3: Show the results
-                                            $("#factOut").text(number);
+                                                    //Step 3: Show the results
+                                                    $("#factOut").text(number);
+                                                });
+                                                $("#btnClear3").click(function () {
+                                                    $("#factIn").val("");
+                                                    $("#factOut").text("");
+                                                });
                                         });
-                                        $("#btnClear3").click(function () {
-                                            $("#factIn").val("");
-                                            $("#factOut").text("");
-                                        });
-                                });
-                                </pre>
+                                    </pre>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>               
-                <div class="modal-footer">
+                    <div class="modal-footer">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--Sum Of All Fears Modal-->
-    <div id="myModal4" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg">
+        <!--Sum Of All Fears Modal-->
+        <div id="myModal4" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
 
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header modal-lg">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Coding Exercises</h4>
-                </div>
-                <div class="modal-body">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header modal-lg">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Coding Exercises</h4>
+                    </div>
+                    <div class="modal-body">
 
-                    <h2>Sum of All Fears</h2>
-                    <div class="row">
-                        <div class="col-md-11">
-                            <p>
-                                The Sum of All Fears icoding cahllenge involves an array of integers and some number called 'K'.
-                                If 'K' can be derived from adding any two numbers from the array tehn it is said to contain that 'K' calue.
-                                If given an array =[10,4,6,7] and a 'K' value of 17, the array contains the'K' value because 10 + 7 ='K'
-                            </p>
+                        <h2>Sum of All Fears</h2>
+                        <div class="row">
+                            <div class="col-md-11">
+                                <p>
+                                    The Sum of All Fears icoding cahllenge involves an array of integers and some number called 'K'.
+                                    If 'K' can be derived from adding any two numbers from the array tehn it is said to contain that 'K' calue.
+                                    If given an array =[10,4,6,7] and a 'K' value of 17, the array contains the'K' value because 10 + 7 ='K'
+                                </p>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-6" h3>
+                                Create a searchable array by entering 6 numbers into the boxes below
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <input class="form-control input" type="number" id="fears1" placeholder="Enter a number" />
+                            </div>
+                            <div class="col-md-2">
+                                <input class="form-control input" type="number" id="fears2" placeholder="Enter a number" />
+                            </div>
+                            <div class="col-md-2">
+                                <input class="form-control input" type="number" id="fears3" placeholder="Enter a number" />
+                            </div>
+                            <div class="col-md-2">
+                                <input class="form-control input" type="number" id="fears4" placeholder="Enter a number" />
+                            </div>
+                            <div class="col-md-2">
+                                <input class="form-control input" type="number" id="fears5" placeholder="Enter a number" />
+                            </div>
+                            <div class="col-md-2">
+                                <input class="form-control input" type="number" id="fears6" placeholder="Enter a number" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <p>Enter a K value below.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <input class="form-control input" type="number" id="kValue" placeholder="Enter K Value..." />
+                            <br />
                         </div>
                     </div>
-                    <br />
-                    <div class="row">
-                        <div class="col-md-6" h3>
-                            Create a searchable array by entering 6 numbers into the boxes below
+                    <div class="col-md-offset-1 col-md-5">
+                        <div class="row text-center">
+                            <h5>Results:</h5>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-md-offset-2 col-md-8">
 
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2">
-                            <input class="form-control" type="number" id="val1" placeholder="Enter a number" />
-                        </div>
-                        <div class="col-md-2">
-                            <input class="form-control" type="number" id="val2" placeholder="Enter a number" />
-                        </div>
-                        <div class="col-md-2">
-                            <input class="form-control" type="number" id="val3" placeholder="Enter a number" />
-                        </div>
-                        <div class="col-md-2">
-                            <input class="form-control" type="number" id="val4" placeholder="Enter a number" />
-                        </div>
-                        <div class="col-md-2">
-                            <input class="form-control" type="number" id="val5" placeholder="Enter a number" />
-                        </div>
-                        <div class="col-md-2">
-                            <input class="form-control" type="number" id="val6" placeholder="Enter a number" />
-                        </div>
-                    </div>
-                    <br />
-                    <div class="row">
-                        <div class="col-md-6" h3>
-                            Establish a 'K' value by entering a number in the box below
-
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2">
-                            <input class="form-inline" type="number" id="kValue" placeholder="Enter a number" />
-                        </div>
-                        <div class="col-md-6">
-                            <p id="factOut4" class="text-center"></p>
+                                <div id="kResponse" class="output"></div>
+                                <div id="kEquation" class="output"></div>
+                            </div>
                         </div>
                     </div>
                     <br />
                     <div class="btn-group btn-group-lg btn-group-justified">
 
                         <a class="btn btn-success" id="btnFact5">Calculate</a>
-                        <a class="btn btn-info" id="codeBtn4">Code</a>
+                        <a class="btn btn-info" id="toggle4">Show Code</a>
                         <a class="btn btn-danger" id="clearBtn4">Clear</a>
                     </div>
                     <hr />
                     <div class="row">
                         <div class="col-md-12">
-                            <div id="code">
+                            <div id="code4">
                                 <pre class="brush:js">
                                           $("btnFact5").click(function () {
                                         //Set an empty Array
@@ -817,91 +700,85 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!--Java Math Modal-->
-    <div id="myModal5" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg">
+        <!--Java Math Modal-->
+        <div id="myModal5" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
 
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">JavaScript Exercises</h4>
-                </div>
-                <div class="modal-body">
-                    <h2>Javascript Math</h2>
-
-                    <hr />
-                    <div class="row">
-                        <div class="col-md-12 text-center h3">
-                            <h4> Enter any 5 numbers to run the math</h4>
-                            <br />
-                        </div>
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">JavaScript Exercises</h4>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <input class="form-control" type="number" id="mathnum1" placeholder=" Enter a number" />
+                    <div class="modal-body">
+                        <h2>Javascript Math</h2>
+
+                        <hr />
+                        <div class="row">
+                            <div class="col-md-12 text-center h3">
+                                <h4> Enter any 5 numbers to run the math</h4>
+                                <br />
+                            </div>
                         </div>
-                        <div class=" col-mod-6">
-                            <p id="min" class="text-center"></p>
-                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input class="form-control" type="number" id="mathnum1" placeholder=" Enter a number" />
+                            </div>
+                            <div class=" col-mod-6">
+                                <p id="min" class="text-center"></p>
+                            </div>
 
 
 
-                    </div>
-                    <br />
-                    <div class="row">
-                        <div class="col-md-6">
-                            <input class="form-control" type="number" id="mathnum2" placeholder=" Enter a number" />
                         </div>
-                        <div class="col-mod-6">
-                            <p id="max" class="text-center"></p>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input class="form-control" type="number" id="mathnum2" placeholder=" Enter a number" />
+                            </div>
+                            <div class="col-mod-6">
+                                <p id="max" class="text-center"></p>
+                            </div>
                         </div>
-                    </div>
-                    <br />
-                    <div class="row">
-                        <div class="col-md-6">
-                            <input class="form-control" type="number" id="mathnum3" placeholder=" Enter a number" />
+                        <br />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input class="form-control" type="number" id="mathnum3" placeholder=" Enter a number" />
+                            </div>
+                            <div class="col-mod-6">
+                                <p id="mean" class="text-center"></p>
+                            </div>
                         </div>
-                        <div class="col-mod-6">
-                            <p id="mean" class="text-center"></p>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input class="form-control" type="number" id="mathnum4" placeholder=" Enter a number" />
+                            </div>
+                            <div class="col-md-6">
+                                <p id="sum" class="text-center"></p>
+                            </div>
                         </div>
-                    </div>
-                    <br />
-                    <div class="row">
-                        <div class="col-md-6">
-                            <input class="form-control" type="number" id="mathnum4" placeholder=" Enter a number" />
+                        <br />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input class="form-control" type="number" id="mathnum5" placeholder=" Enter a number" />
+                            </div>
+                            <div class="col-md-6">
+                                <p id="product" class="text-center"></p>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <p id="sum" class="text-center"></p>
-                        </div>
-                    </div>
-                    <br />
-                    <div class="row">
-                        <div class="col-md-6">
-                            <input class="form-control" type="number" id="mathnum5" placeholder=" Enter a number" />
-                        </div>
-                        <div class="col-md-6">
-                            <p id="product" class="text-center"></p>
-                        </div>
-                    </div>
-                    <br />
-                    <div class="row">
-                        <div class="col-md-12">
+                        <br />
+                        <div class="btn-group btn-group-lg btn-group-justified">
 
-
-                            <button class="btn btn-success" id="mathBtn">Calculate</button>
-                            <button class="btn btn-info" id="codeBtn5">Show Code</button>
-                            <button class="btn btn-danger" id="clearBtn5">Clear</button>
-
+                            <a class="btn btn-success" id="mathBtn">Calculate</a>
+                            <a class="btn btn-info" id="toggle5">Show Code</a>
+                            <a class="btn btn-danger" id="clearBtn5">Clear</a>
                         </div>
-                    </div>
-
-                    <hr />
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div id="code">
-                                <pre class="brush:js">
+                        <hr />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="code5">
+                                    <pre class="brush:js">
                                  $("#mathBtn").click(function () {
                                     //Step 1: Grab the value inside input id
                                     var number1 = Number($("#mathnum1").val());
@@ -934,20 +811,66 @@
                                     $("#mathnum1, #mathnum2, #mathnum3, #mathnum4, #mathnum5").val("");
                                 });
                                 </pre>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
+                    <div class="modal-footer">
 
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-
-
-
+        <script src="~/Scripts/jquery.js"></script>
+        <script src="~/Scripts/modernizr.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="~/Scripts/bootstrap.min.js"></script>
+        <script src="~/Scripts/menustick.js"></script>
+        <script src="~/Scripts/parallax.js"></script>
+        <script src="~/Scripts/easing.js"></script>
+        <script src="~/Scripts/wow.js"></script>
+        <script src="~/Scripts/smoothscroll.js"></script>
+        <script src="~/Scripts/masonry.js"></script>
+        <script src="~/Scripts/imgloaded.js"></script>
+        <script src="~/Scripts/classie.js"></script>
+        <script src="~/Scripts/colorfinder.js"></script>
+        <script src="~/Scripts/gridscroll.js"></script>
+        <script src="~/Scripts/contact.js"></script>
+        <script src="~/Scripts/common.js"></script>
+        <script src="~/Scripts/fizzbuzz.js"></script>
+        <script src="~/Scripts/JavaScript.js"></script>
+        <script src="~/Scripts/fact.js"></script>
+        <script src="~/Scripts/sum.js"></script>
+        <script src="~/Scripts/JavaMath.js"></script>
+        <script src="~/Scripts/SyntaxHighlighter/scripts/shCore.js"></script>
+        <script src="~/Scripts/SyntaxHighlighter/scripts/shBrushJScript.js"></script>
+        <script>
+            wow = new WOW({}).init();
+        </script>
+        <script type="text/javascript">
+            jQuery(function ($) {
+                $(document).ready(function () {
+                    //enabling stickUp on the '.navbar-wrapper' class
+                    $('.navbar-wrapper').stickUp({
+                        parts: {
+                            0: 'banner',
+                            1: 'aboutus',
+                            2: 'specialties',
+                            3: 'gallery',
+                            4: 'feedback',
+                            5: 'contact'
+                        },
+                        itemClass: 'menuItem',
+                        itemHover: 'active',
+                        topMargin: 'auto'
+                    });
+                });
+            });
+        </script>
+        <script>
+            SyntaxHighlighter.all();
+        </script>
 
 </body>
 

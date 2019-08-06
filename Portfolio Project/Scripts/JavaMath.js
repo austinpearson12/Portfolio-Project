@@ -31,15 +31,16 @@
         $("#mathnum1, #mathnum2, #mathnum3, #mathnum4, #mathnum5").val("");
 
     });
-    $("#code").hide();
-    $("#codeBtn5").click(function () {
-        $("#code").toggle();
-        if ($(this).text == "Show Code") {
+    $("#code5").hide();
+    $("#toggle5").click(function () {
+        $("#code5").toggle();
+        if ($(this).text() === "Show Code") {
             $(this).text("Hide Code");
         } else {
             $(this).text("Show Code");
         }
     });
+
 });
 
 

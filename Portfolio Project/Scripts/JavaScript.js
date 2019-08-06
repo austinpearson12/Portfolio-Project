@@ -1,6 +1,5 @@
 ﻿$(function () {
 
-
     //step 1: Get the data
     $("#btnPal").click(function () {
         var word = $("#palIn").val();
@@ -25,17 +24,19 @@
         $("#palIn").val("");
         $("#palOut").text("");
     });
-    $("#code").hide();
-    $("#codeBtn2").click(function () {
-        $("#code").toggle();
-        if ($(this).text == "Show Code") {
+
+    $("#code2").hide();
+
+    $("#toggle2").click(function () {
+        $("#code2").toggle();
+        if ($(this).text() == "Show Code") {
             $(this).text("Hide Code");
         } else {
             $(this).text("Show Code");
         }
     });
-
 });
+
     //Step 3: Infrom The User
   
 

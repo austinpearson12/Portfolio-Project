@@ -1,4 +1,5 @@
-﻿$(function () {
+﻿
+$(function () {
 
     $("#btnFizz").click(function () {
         // Get value from input id's
@@ -33,13 +34,16 @@
         $("#fbn2").val("");
         $("#fizzOut").text("");
     });
-    $("#code").hide();
-    $("#codeBtn").click(function () {
-        $("#code").toggle();
-        if ($(this).text == "Show Code") {
+
+    $("#code1").hide();
+
+    $("#toggle1").click(function () {
+        $("#code1").toggle();
+        if ($(this).text() == "Show Code") {
             $(this).text("Hide Code");
         } else {
             $(this).text("Show Code");
         }
     });
+
 });

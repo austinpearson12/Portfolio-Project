@@ -21,19 +21,23 @@
             //Step 3: Show the results
             $("#factOut").text(number);
         });
+
         $("#btnClear3").click(function () {
             $("#factIn").val("");
             $("#factOut").text("");
         });
-    $("#code").hide();
-    $("#codeBtn3").click(function () {
-        $("#code").toggle();
-        if ($(this).text == "Show Code") {
+
+    $("#code6").hide();
+
+    $("#toggle6").click(function () {
+        $("#code6").toggle();
+        if ($(this).text() == "Show Code") {
             $(this).text("Hide Code");
         } else {
             $(this).text("Show Code");
         }
     });
+    
 
 });
          
