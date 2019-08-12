@@ -144,6 +144,7 @@
     <Content Include="img\loading.gif" />
     <Content Include="img\logo.png" />
     <Content Include="img\pattern.png" />
+    <Content Include="img\project.jpg" />
     <Content Include="img\team\.netlogo.png" />
     <Content Include="img\team\1.jpg" />
     <Content Include="img\team\2.jpg" />
@@ -167,6 +168,13 @@
     <Content Include="img\work\austin.jpg" />
     <Content Include="img\work\Fizzbuzz.png" />
     <Content Include="img\work\palindrome.jpeg" />
+    <Content Include="img\work\project-1.jpg" />
+    <Content Include="img\work\project-2.jpg" />
+    <Content Include="img\work\project-3.jpg" />
+    <Content Include="img\work\project-4.jpg" />
+    <Content Include="img\work\project-5.jpg" />
+    <Content Include="img\work\project-6.jpg" />
+    <Content Include="img\work\project-7.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="fonts\FontAwesome.otf" />
@@ -205,6 +213,7 @@
     <Content Include="Scripts\smoothscroll.js" />
     <Content Include="Scripts\fizzbuzz.js" />
     <Content Include="Scripts\sum.js" />
+    <Content Include="Scripts\swiper.min.js" />
     <Content Include="Scripts\SyntaxHighlighter\scripts\shAutoloader.js" />
     <Content Include="Scripts\SyntaxHighlighter\scripts\shBrushAppleScript.js" />
     <Content Include="Scripts\SyntaxHighlighter\scripts\shBrushAS3.js" />
@@ -265,6 +274,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Scripts\SyntaxHighlighter\scripts\swiper.min.js.map" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
