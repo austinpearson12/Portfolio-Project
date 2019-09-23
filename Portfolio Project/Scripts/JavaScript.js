@@ -13,10 +13,10 @@
         }
 
         if (word === revword) {
-            $("#palOut").text(revword + "is a Palindrome!");
+            $("#palOut").text(revword + " " + "is a Palindrome!");
         }
         else {
-            $("#palOut").text(revword + "is not a Palindrome.");
+            $("#palOut").text(revword + " " + "is not a Palindrome.");
         }
     });
 
